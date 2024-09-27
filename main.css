@@ -159,6 +159,32 @@ font-weight: 500;
     font-size: 1.4rem;
 }
 
+.pokemon-tipos{
+    display: flex;
+    gap: .5rem;
+    font-weight: 500;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tipo{
+    padding: .25rem;
+    border-radius: 100vmax;
+}
+
+.pokemon-stats{
+    display: flex;
+    gap: 1rem;
+    font-size: .85rem;
+
+}
+
+.stat{
+    background-color: var(--clr-gray);
+    padding: .25rem .5rem;
+    border-radius: 100vmax;
+}
+
 /* BOTONES */
 
 .normal {
