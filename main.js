@@ -29,7 +29,12 @@ function mostrarPokemon(poke) {
         else if (pokeWeight.length === 3){
             pokeWeight = pokeWeight[0] + pokeWeight[1] + "," + pokeWeight[2];
         }
-
+    
+    let pokeHeight = poke.height.toString().split("");
+        if (pokeHeight.length === 1){
+            pokeHeight = "0" + "," + pokeHeight[0];
+        }
+       
 
     const div = document.createElement("div");
     div.classList.add("pokemon");
@@ -47,8 +52,8 @@ function mostrarPokemon(poke) {
                 ${tipos}
             </div>
             <div class="pokemon-stats">
-                <p class="stat">${poke.height} m</p>
-                <p class="stat">${pokeWeight}Kg</p>
+                <p class="stat">${pokeHeight} m</p>
+                <p class="stat">${pokeWeight} Kg</p>
             </div>
         </div>
         `;
