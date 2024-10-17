@@ -64,6 +64,15 @@ header{
     padding: 2rem;
     margin: 0 auto;
 }
+.nombre-pokedex{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+img.nombre-pokedex {
+    width: 40%;
+}
 
 .nav-list{
     display: flex;
@@ -93,6 +102,7 @@ main{
     max-width: 1000px;
     padding: 2rem;
     margin: 0 auto;
+    background-color: #ccc;
 }
 
 .pokemon-todos{
@@ -123,6 +133,11 @@ main{
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.pokemon:hover{
+    transform: scale(1.1);
 }
 
 .pokemon-id-back{
